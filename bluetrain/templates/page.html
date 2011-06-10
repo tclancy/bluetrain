@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}{% if page.title_tag %} - {{ page.title_tag }} {% else %} - {% for crumb in page.lineage %}{{ crumb }}{% endfor %}{% endif %}{% endblock %}
+
+{% block body_extras %}id="section-{{ level_one.css_class }}"{% endblock %}
+
+{% block keywords %}{{ page.keywords }}{% endblock %}
+{% block description %}{{ page.meta_description }}{% endblock %}
+
+{% block body %}
+{{ page.content|safe }}
+{% endblock %}

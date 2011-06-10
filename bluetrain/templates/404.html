@@ -1,0 +1,25 @@
+{% extends "pages/page.html" %}
+
+{% block body_extras %}id="sectionError"{% endblock %}
+
+{% block body %}
+<div id="contentArea" class="clearfix">
+	<div id="content" class="clearfix">
+	
+		<h1>Oops!</h1>
+		<p><strong>We have recently updated our site</strong> and the page you are trying to view has been moved or no longer exists. Please use the list below to navigate our new site.</p>
+		
+		<ul id="sitemap">
+		{% for level_one, sections in page.sitemap %}
+		<li class="main{{ level_one.css_class }}"><a href="{{ level_one.get_absolute_url }}" class="dropdown">{{ level_one.title }}</a>
+			<ul>
+				{% if sections %}{% for section in sections %}<li><a href="{{ section.get_absolute_url }}">{{ section.title }}</a></li>{% endfor %}{% endif %}
+			</ul>
+		</li>
+		{% endfor %}
+		</ul>
+		
+</div><!-- #content -->
+
+</div><!-- #contentArea -->
+{% endblock %}
