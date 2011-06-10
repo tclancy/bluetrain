@@ -1,51 +1,7 @@
-{% extends "two-column-base.html" %}
+{% extends "base.html" %}
 
 {% block body_extras %}id="section-home"{% endblock %}
 
 {% block extra_css %}@import "{{ MEDIA_URL }}css/home.css";{% endblock %}
 
-{% block left_column_one %}
-
-	<h1>welcome</h1>
-	{{ page.content|safe }}
-	<p><a href="/pages/about" class="more-link">More About Those Clever Kids &raquo;</a></p>
-
-{% endblock %}
-
-{% block body %}
-
-	<h2>recent posts</h2>
-	<div class="recent-post clearfix">
-		<div class="post-date">JUN<br /><a href="#">25</a></div>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec et sapien. Proin sed mi et mauris tincidunt semper. Nunc diam. Duis massa magna, nonummy nec, convallis ac, ultricies a, elit. <a href="#">more &raquo;</a></p>
-	</div>
-
-	<div class="recent-post clearfix">
-		<div class="post-date">JUN<br /><a href="#">25</a></div>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec et sapien. Proin sed mi et mauris tincidunt semper. Nunc diam. Duis massa magna, nonummy nec, convallis ac, ultricies a, elit. <a href="#">more &raquo;</a></p>
-	</div>
-
-	<div class="recent-post clearfix">
-		<div class="post-date">JUN<br /><a href="#">25</a></div>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec et sapien. Proin sed mi et mauris tincidunt semper. Nunc diam. Duis massa magna, nonummy nec, convallis ac, ultricies a, elit. <a href="#">more &raquo;</a></p>
-	</div>
-
-	<p><a href="#" class="more-link">more posts &raquo;</a></p>
-
-{% endblock %}
-
-
-{% block right_column %}
-
-	<div id="featured-project">
-		
-		<h2>featured project</h2>
-		
-		<div id="project-thumb"><img src="../../includes/img/featured-projects/denimrack-thumb.jpg" alt="Denimrack" /></div>
-		<p><a href="#" class="bold-link">Deminrack.com</a> lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec et sapien. Proin sed mi et mauris tincidunt semper. Nunc diam. Duis massa magna, nonummy nec, convallis ac, ultricies a, elit. Maecenas eu dolor. Curabitur in mauris nec quam elementum iaculis. Pellentesque id nulla vitae enim placerat egestas.</p>
-
-		<p><a href="#" class="more-link">more projects &raquo;</a></p>
-
-	</div>
-
-{% endblock %}
+{% block body %}{{ page.content|safe }}{% endblock %}
