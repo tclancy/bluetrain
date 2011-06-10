@@ -6,6 +6,11 @@ includes three types of pages:
 3. Constants -- these are pages that do not appear in the page hierarchy but can be visited by all,
 typically links that appear on all pages, e.g., 'contact us'
 
+INSTALL
+=======
+
+You will want to load both files under fixtures via ./manage.py loaddata
+
 REQUIRED SETTINGS
 =================
 

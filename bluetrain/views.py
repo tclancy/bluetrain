@@ -16,7 +16,7 @@ def error_404(request):
 
 	return render_to_response('404.html', locals())
 
-def show_page(request, slug="home", template='pages/page.html', extra_context={}):
+def show_page(request, slug="home", template='bluetrain/page.html', extra_context={}):
 	# look for cached copy of page
 	if settings.USE_CACHE:
 		cache_key = HtmlPage.get_cache_key_for_page(slug)
@@ -33,7 +33,7 @@ def show_page(request, slug="home", template='pages/page.html', extra_context={}
 
 	if slug == 'home':
 		home = True
-		template = 'pages/home.html'
+		template = 'bluetrain/home.html'
 		level_one_class = 'Home'
 	else:
 		level_one_class = level_one.css_class()
@@ -52,7 +52,7 @@ def form_thank_you(request, form_slug):
 	level_one = page.level_one
 	is_level_one = (page == page.level_one)
 
-	return render_to_response('pages/form-thank-you.html', locals(), context_instance=RequestContext(request))
+	return render_to_response('bluetrain/form-thank-you.html', locals(), context_instance=RequestContext(request))
 
 def sitemap(request):
 	if settings.USE_CACHE:
@@ -61,7 +61,7 @@ def sitemap(request):
 		if page_view:
 			return page_view
 	page = HtmlPage.objects.get(slug='home')
-	page_view = render_to_response('pages/sitemap.html', {'page': page}, context_instance=RequestContext(request))
+	page_view = render_to_response('bluetrain/sitemap.html', {'page': page}, context_instance=RequestContext(request))
 	if settings.USE_CACHE:
 		cache.set(cache_key, page_view, settings.DEFAULT_CACHE_TIMEOUT)
 	return page_view
