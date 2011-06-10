@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
 	name = 'bluetrain',
 	packages = ['bluetrain'],
-	version = '0.9.3.1',
+	version = '0.9.3.2',
 	description = 'Django CMS',
 	author='Tom Clancy',
 	author_email='tclancy@gmail.com',

@@ -1,7 +1,7 @@
 from django.conf.urls.defaults import *
 
 
-urlpatterns = patterns('pages.views',
+urlpatterns = patterns('bluetrain.views',
 	url(r'^sitemap/?$', 'sitemap', name='sitemap'),
 	url(r'^thank-you/(?P<form_slug>[^/]+)/?$', 'form_thank_you', name='form_thank_you'),
 	url(r'^contact-us/?$', 'show_page', {'slug': 'contact-us'}, name="pages_contact_us"),
