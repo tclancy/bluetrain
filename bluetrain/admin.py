@@ -39,6 +39,7 @@ class CustomPageForm(forms.ModelForm):
 
 class HtmlPageAdmin(admin.ModelAdmin):
 	class Media:
+		# TODO: only do this if grappelli is present, fix paths
 		js = ['/media/tinymce/jscripts/tiny_mce/tiny_mce.js', '/includes/js/tinymce_setup.js',]
 
 	form = CustomPageForm
@@ -64,7 +65,7 @@ class HtmlPageAdmin(admin.ModelAdmin):
 		return qs.exclude(pk__in=bad_ids)
 
 
-admin.site.register(get_model('pages', 'htmlpage'), HtmlPageAdmin)
+admin.site.register(get_model('bluetrain', 'htmlpage'), HtmlPageAdmin)
 admin.site.register(FocusArea, FocusAreaAdmin)
 admin.site.register(PageType)
 admin.site.register(PageImage)
