@@ -35,7 +35,7 @@ class CustomPageForm(forms.ModelForm):
 		return super(CustomPageForm, self).clean()
 
 	class Meta:
-		model = get_model('pages', 'htmlpage')
+		model = get_model('bluetrain', 'htmlpage')
 
 class HtmlPageAdmin(admin.ModelAdmin):
 	class Media:
