@@ -1,0 +1,3 @@
+recursive-include bluetrain/fixtures *.json
+recursive-include bluetrain/templates *.html
+recursive-include bluetrain/templatetags *.py
