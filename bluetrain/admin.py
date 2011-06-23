@@ -1,4 +1,5 @@
 from django import forms
+from django.conf import settings
 from django.contrib import admin
 from django.db.models import get_model
 
@@ -40,7 +41,8 @@ class CustomPageForm(forms.ModelForm):
 class HtmlPageAdmin(admin.ModelAdmin):
 	class Media:
 		# TODO: only do this if grappelli is present, fix paths
-		js = ['/media/tinymce/jscripts/tiny_mce/tiny_mce.js', '/includes/js/tinymce_setup.js',]
+		js = ['%s/js/tiny_mce/tiny_mce.js' % settings.MEDIA_URL,
+			  '%s/js/tinymce_setup.js' % settings.MEDIA_URL,]
 
 	form = CustomPageForm
 
