@@ -8,7 +8,7 @@ setup(
 		'bluetrain.templates',
 		'bluetrain.templatetags',
 	],
-	version = '0.9.5',
+	version = '0.9.6.2',
 	description = 'Django CMS',
 	author='Tom Clancy',
 	author_email='tclancy@gmail.com',
