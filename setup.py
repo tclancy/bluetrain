@@ -2,8 +2,13 @@ from distutils.core import setup
 
 setup(
 	name = 'bluetrain',
-	packages = ['bluetrain'],
-	version = '0.9.4.7',
+	packages = [
+		'bluetrain',
+		'bluetrain.fixtures',
+		'bluetrain.templates',
+		'bluetrain.templatetags',
+	],
+	version = '0.9.5',
 	description = 'Django CMS',
 	author='Tom Clancy',
 	author_email='tclancy@gmail.com',
