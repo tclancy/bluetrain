@@ -2,11 +2,15 @@ from setuptools import setup, find_packages
 
 setup(
     name="bluetrain",
-    packages=find_packages(),
+    packages=[
+            'bluetrain',
+            'bluetrain.templatetags',
+    ],
     package_data={
         "bluetrain": ["templates/*.html", "fixtures/*.json"],
     },
-    version="0.9.7.3",
+    include_package_data=True,
+    version="0.9.7.5",
     description="Django CMS",
     long_description=open("README.txt").read(),
     author="Tom Clancy",

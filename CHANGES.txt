@@ -3,3 +3,5 @@ v0.9.7, 8/20/2012 Actually got it to work. Removed base.html as user should prov
 v0.9.7.1, 8/20/2012 Fixed packages list now that I've got things (hopefully) working.
 v0.9.7.2, 8/20/2012 Still hates me.
 v0.9.7.3, 8/20/2012 Could it be? Feels like I've got 6 redundant declarations to include the stuff.
+v0.9.7.4, 8/20/2012 It wasn't. Maybe this time.
+v0.9.7.5, 8/20/2012 You wish stupid.
