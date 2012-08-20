@@ -5,3 +5,4 @@ v0.9.7.2, 8/20/2012 Still hates me.
 v0.9.7.3, 8/20/2012 Could it be? Feels like I've got 6 redundant declarations to include the stuff.
 v0.9.7.4, 8/20/2012 It wasn't. Maybe this time.
 v0.9.7.5, 8/20/2012 You wish stupid.
+v0.9.7.6, 8/20/2012 I think I'll stop updating this until it works, ok?

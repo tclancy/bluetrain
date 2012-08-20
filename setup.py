@@ -3,14 +3,14 @@ from setuptools import setup, find_packages
 setup(
     name="bluetrain",
     packages=[
-            'bluetrain',
-            'bluetrain.templatetags',
+            "bluetrain",
+            "bluetrain.templatetags",
     ],
     package_data={
         "bluetrain": ["templates/*.html", "fixtures/*.json"],
     },
     include_package_data=True,
-    version="0.9.7.5",
+    version="0.9.7.6",
     description="Django CMS",
     long_description=open("README.txt").read(),
     author="Tom Clancy",
