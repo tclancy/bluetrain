@@ -1,19 +1,17 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
-    name='bluetrain',
-    packages=[
-            'bluetrain',
-            'bluetrain.fixtures',
-            'bluetrain.templates',
-            'bluetrain.templatetags',
-    ],
-    version='0.9.6.3',
-    description='Django CMS',
-    long_description=open('README.txt').read(),
-    author='Tom Clancy',
-    author_email='tclancy@gmail.com',
-    url='https://bitbucket.org/tclancy/tkc_apps',
+    name="bluetrain",
+    packages=find_packages(),
+    package_data={
+        "bluetrain": ["templates/*.html", "fixtures/*.json"],
+    },
+    version="0.9.7.3",
+    description="Django CMS",
+    long_description=open("README.txt").read(),
+    author="Tom Clancy",
+    author_email="tclancy@gmail.com",
+    url="https://github.com/tclancy/bluetrain",
     license="LGPL",
     classifiers=[
             "Development Status :: 4 - Beta",
