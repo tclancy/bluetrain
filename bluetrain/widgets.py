@@ -2,6 +2,7 @@ from django import forms
 from django.conf import settings
 from django.utils.safestring import mark_safe
 
+
 class WYMEditor(forms.Textarea):
     class Media:
         js = (

@@ -1,7 +1,8 @@
 from django.test import TestCase, Client
 from django.core.urlresolvers import reverse
 
-from pages.models import HtmlPage, PageType
+from bluetrain.models import HtmlPage, PageType
+
 
 class HtmlPageTests(TestCase):
     fixtures = ['pagetypes.json', 'pages.json']
