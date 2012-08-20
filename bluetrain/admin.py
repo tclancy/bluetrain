@@ -3,7 +3,7 @@ from django.conf import settings
 from django.contrib import admin
 from django.db.models import get_model
 
-from from bluetrain.models import *
+from bluetrain.models import *
 
 
 class CustomFocusAreaForm(forms.ModelForm):

@@ -1,1 +1,3 @@
 recursive-include bluetrain/templatetags *
+recursive-include bluetrain/fixtures *.json
+recursive-include bluetrain/templates/bluetrain *.html
