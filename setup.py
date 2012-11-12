@@ -10,7 +10,7 @@ setup(
         "bluetrain": ["templates/*.html", "fixtures/*.json"],
     },
     include_package_data=True,
-    version="0.9.9",
+    version="0.9.9.2",
     description="Django CMS",
     long_description=open("README.txt").read(),
     author="Tom Clancy",

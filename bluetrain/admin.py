@@ -48,8 +48,8 @@ class HtmlPageAdmin(admin.ModelAdmin):
     class Media:
         if 'grappelli' in settings.INSTALLED_APPS:
             url = settings.MEDIA_URL if settings.MEDIA_URL else settings.STATIC_URL
-            js = ['%s/js/tiny_mce/tiny_mce.js' % url,
-                      '%s/js/tinymce_setup.js' % url]
+            js = ['%sjs/tiny_mce/tiny_mce.js' % url,
+                      '%sjs/tinymce_setup.js' % url]
 
     form = CustomPageForm
 
